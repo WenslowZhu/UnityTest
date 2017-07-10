@@ -326,8 +326,12 @@ Clean一下你的工程，然后重新编译。
 
 # 参考
 [swift3.0融合Unity](http://www.jianshu.com/p/e8217896d6ff)
+
 [unity 整合到原生iOS项目(swift 2.3)](http://www.jianshu.com/p/1a141e4fccb3)
+
 [Unity嵌入Swift3.0](http://www.jianshu.com/p/102573403e6d)
+
 [unity3D与iOS原生工程项目合并以及合并过程中的问题](http://www.jianshu.com/p/f98bcfe09dc7)
+
 [下载Unity.xcconfig，由blitzagency提供](https://github.com/blitzagency/ios-unity5)
 
