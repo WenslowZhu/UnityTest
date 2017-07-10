@@ -6049,7 +6049,7 @@
 					"$(UNITY_IOS_EXPORT_PATH)/Libraries/bdwgc/include",
 					"$(UNITY_IOS_EXPORT_PATH)/Libraries",
 					"\"$(PODS_ROOT)/Headers/Public\"",
-					"\"$(PODS_ROOT)/Headers/Public/JPush\"",
+					"$(PODS_ROOT)/Headers/Public/JPush",
 				);
 				INFOPLIST_FILE = unityTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -6087,7 +6087,7 @@
 					"$(UNITY_IOS_EXPORT_PATH)/Libraries/bdwgc/include",
 					"$(UNITY_IOS_EXPORT_PATH)/Libraries",
 					"\"$(PODS_ROOT)/Headers/Public\"",
-					"\"$(PODS_ROOT)/Headers/Public/JPush\"",
+					"$(PODS_ROOT)/Headers/Public/JPush",
 				);
 				INFOPLIST_FILE = unityTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

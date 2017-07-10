@@ -314,7 +314,7 @@ pod install
 Clean一下你的工程，然后重新编译。
 
 遇到找不到头文件
-![遇到找不到头文件](http://upload-images.jianshu.io/upload_images/1374191-e443ea6792114649.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![遇到找不到头文件](http://upload-images.jianshu.io/upload_images/1374191-20764358b9367d2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 在Header Search Paths 中添加
 ```
