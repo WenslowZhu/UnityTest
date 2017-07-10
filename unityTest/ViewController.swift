@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class ViewController: UIViewController {
 
@@ -20,13 +19,11 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(enterUnityView), for: UIControlEvents.touchUpInside)
     }
 
-    
+    //MARK: 进图Unity视图
     func enterUnityView(){
         let vc = AViewController()
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true, completion: nil)
-        
-        Alamofire.request("qw", method: HTTPMethod.post, parameters: nil, encoding: JSONEncoding.default, headers: nil)
     }
 }
 

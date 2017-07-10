@@ -18,21 +18,28 @@ class AViewController: UIViewController {
         unityview.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(unityview)
         unityview.frame = view.bounds
+        
+        //退出的按钮
+        let button = UIButton(frame: CGRect(x: 200, y: 100, width: 100, height: 100))
+        button.backgroundColor = UIColor.blue
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(dismissSelf), for: UIControlEvents.touchUpInside)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //开启Unity
-        if UnityIsPaused() == 0{
-            UnityPause(0)
-        }
+        UnityPause(0)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         //关闭Unity
-        if UnityIsPaused() == 1{
-            UnityPause(1)
-        }
+        UnityPause(1)
+    }
+    
+    //MARK: 退出视图
+    func dismissSelf(){
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
