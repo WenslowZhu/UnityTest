@@ -5711,7 +5711,6 @@
 				TargetAttributes = {
 					829287571F00FE4700770A7A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = EE89RQYX9Y;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -6040,7 +6039,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = EE89RQYX9Y;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = (
 					"$(UNITY_IOS_EXPORT_PATH)/Classes",
@@ -6062,7 +6061,6 @@
 					"$(PROJECT_DIR)/UnityFix/Libraries",
 					"$(PROJECT_DIR)/UnityFix/Libraries/Plugins/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucard.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -6078,7 +6076,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = EE89RQYX9Y;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = (
 					"$(UNITY_IOS_EXPORT_PATH)/Classes",
@@ -6100,7 +6098,6 @@
 					"$(PROJECT_DIR)/UnityFix/Libraries",
 					"$(PROJECT_DIR)/UnityFix/Libraries/Plugins/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucard.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				UNITY_IOS_EXPORT_PATH = "$(PROJECT_DIR)/UnityFix";
