@@ -39,6 +39,8 @@ cp -Rf "$UNITY_IOS_EXPORT_PATH/Data" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data";
 # 代码整合
 
 1. 修改UnityUtils.mm中的代码
+
+
 ```
 //用下列代码替换原代码
 extern "C" int custom_unity_init(int argc, char* argv[])
@@ -76,6 +78,8 @@ extern "C" int custom_unity_init(int argc, char* argv[])
 删除libraries里面的libil2cpp文件夹的引用，然后再删除Classes里面的Native文件夹里面的所有.h文件的引用. 
 
 3. 在Classes中找到main.mm文件
+
+
 ```
 //替换原来的代码
 int main_unity_default(int argc, char* argv[])
@@ -103,7 +107,10 @@ int main_unity_default(int argc, char* argv[])
     return 0;
 }
 ```
+
 4. 在Classes中找到UnityAppController.h做如下修改
+
+
 ```
 //添加如下代码
 #import <UIKit/UIKit.h>
@@ -124,6 +131,8 @@ NS_INLINE UnityAppController* GetAppController()
 ```
 5. 修改Swift工程
 新建一个main.swift文件，添加如下代码
+
+
 ```
 import Foundation
 import UIKit
@@ -139,6 +148,8 @@ UIApplicationMain(
     NSStringFromClass(AppDelegate.self)
 )
 ```
+
+
 6. 对AppDelegate.swift文件做如下修改
 
 ```
@@ -215,6 +226,7 @@ SWIFT_OBJC_BRIDGING_HEADER = UnityFix/UnityBridge.h;
 ![Control may reach end of non-void function](http://upload-images.jianshu.io/upload_images/1374191-9df3b47887545832.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 添加一行代码
 ![返回 NULL](http://upload-images.jianshu.io/upload_images/1374191-57ffedb164f59b9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 3. 解决黑屏问题
 在Libraries->Plugins->iOS 中找到EasyARAppController.mm，将其代码迁移到我们自己生成的一个UnityAppController子类中
 
@@ -230,7 +242,10 @@ ZTARController.h
 - (void)shouldAttachRenderDelegate;
 @end
 ```
+
 ZTARController.mm
+
+
 ```
 #import "ZTARController.h"
 
@@ -250,6 +265,7 @@ IMPL_APP_CONTROLLER_SUBCLASS(ZTARController)
 ```
 
 记得在AppDelegate中做如下修改
+
 ```
 //var currentUnityController: UnityAppController!
 var currentUnityController: ZTARController!
