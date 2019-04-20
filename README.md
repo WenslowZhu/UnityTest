@@ -1,5 +1,6 @@
-# UnityTest
-Swift 3.0 项目集成EasyAR Unity 2.0 SDK
+# Swift 3.0 项目集成EasyAR Unity 2.0 SDK
+
+![](https://upload-images.jianshu.io/upload_images/1374191-45c26ba1f7c1d3a4.jpg)
 
 >前言
 >公司需要在原先Swift 3.0项目中引入EasyAR 的Unity SDK。这篇文章记录了集成过程和遇到的问题。
